@@ -1,0 +1,12 @@
+//==========================================
+// ## ++ Cart Checkout
+//==========================================
+.uc-cart-checkout-form {
+  input[type='submit'] {
+    @extend %button;
+    margin-top: 0;
+    & #edit-cancel {
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+//==========================================
+// ## ++ Globals
+//==========================================
+
+body {
+  background: url("../images/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1a1e21;
+  background-attachment: fixed;
+  background-position: center bottom;
+  font-family: $font-verdana;
+  font-size: $fontsize-basic +2;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+h1 {
+  font-size: $fontsize-basic +24;
+}
+
+h2 {
+  font-size: $fontsize-basic +16;
+}
+
+h3 {
+  font-size: $fontsize-basic +12;
+}
+
+h4 {
+  font-size: $fontsize-basic +6;
+}
+
+h5 {
+  font-size: $fontsize-basic;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: $grey-dark;
+  &:hover {
+    color: $hover-color;
+    text-decoration: none;
+  }
+}

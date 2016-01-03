@@ -1,0 +1,44 @@
+//==========================================
+// ## ++ Cart
+//==========================================
+//Left block
+.block-uc-cart {
+  border: solid 1px $grey-lighter;
+  margin: 20px 0;
+  padding: 5px;
+  text-align: center;
+  td {
+    padding: 5px;
+  }
+  .cart-block-icon-full {
+
+  }
+}
+
+table.cart-block-summary {
+  margin-bottom: 20px;
+  ul.links {
+    padding-top: 15px;
+  }
+}
+
+//Cart page
+#uc-cart-view-form {
+  input[type='submit'] {
+    @extend %button;
+    margin-top: 0;
+  }
+  & #edit-update {
+    margin-right: 10px;
+  }
+  td {
+    padding: 5px;
+    vertical-align: bottom;
+  }
+  tr {
+    background-color: transparent;
+    &:hover {
+      background-color: #efefef;
+    }
+  }
+}

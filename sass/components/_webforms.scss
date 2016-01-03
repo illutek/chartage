@@ -1,0 +1,21 @@
+//===========================================
+// @@ ++ Webforms
+//==========================================
+form.webform-client-form {
+  input {
+    padding: 5px;
+    &[readonly='readonly'] {
+      border: none;
+      color: $hover-color;
+      font-weight: bold;
+    }
+    &[type='submit']{
+      @extend %button;
+      width: 50%;
+    }
+  }
+  .grippie {
+    display: none;
+  }
+}
+
