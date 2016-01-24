@@ -52,6 +52,17 @@
                         } ?>
                         <?php print render($content['body']); ?>
 
+                        <?php
+                        /**
+                         * Als voorlopige oplossing om de sets te tonen via een button
+                         * sets-button.inc.php
+                         * Btn link naat more info form in dit geval naar
+                         */
+                        include 'partials/sets-button.inc.php';
+                        include 'partials/more-info-btn.inc.php';
+                        ?>
+
+
                         <?php if ($user->uid != 0) {
                             print render($content['add_to_cart']); ?>
                         <?php } else { ?>
@@ -59,12 +70,10 @@
                                 <p><i class="fa fa-user"></i>
                                     Only a registered user can place an order.
                                 </p>
+
                                 <p><a href="<?php print base_path() ?>/user/register">Register</a></p>
                             </div>
                         <?php } ?>
-                        <a href="<?php print base_path() ?>node/45?product=<?php print_r($model) ?>">
-                            <button type="button" class="btn btn-default">Get more info about this product</button>
-                        </a>
                     </div>
                 </div>
             </div>

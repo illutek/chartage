@@ -10,7 +10,7 @@ form.webform-client-form {
       font-weight: bold;
     }
     &[type='submit']{
-      @extend %button;
+      @extend %buttonAll;
       width: 50%;
     }
   }

@@ -39,3 +39,26 @@ function webshopchartage_preprocess_page(&$variables)
 {
     $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/images/';
 }
+
+/**
+ * @param $variables
+ */
+function webshopchartage_preprocess_node(&$variables){
+
+}
+
+/**
+ * @param $variables
+ */
+function webshopchartage_preprocess_button(&$variables)
+{
+    $variables['element']['#attributes']['class'] = array();
+    $variables['element']['#attributes']['class'][] = 'btn';
+
+    if (stristr($variables['element']['#value'], 'Add to cart') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-cart';
+    }
+    if (stristr($variables['element']['#value'], 'Cancel') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-cancel';
+    }
+}

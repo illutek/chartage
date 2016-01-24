@@ -56,10 +56,18 @@
     }
     .add-to-cart {
       .form-type-uc-quantity {
+        width: 200px;
+        float: left;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
         input[type=text] {
           text-align: center;
+        }
+      }
+      .form-actions {
+        .btn-cart {
+          @extend %buttonCart;
+          @include roundcorners(0px);
         }
       }
     }
@@ -77,8 +85,8 @@
     display: inline-block;
     margin: 10px 0;
   }
-  input[type=submit], .btn-default {
-    @extend %button;
+  .btn-default {
+    @extend %buttonAll;
     @include roundcorners(0px);
   }
 }

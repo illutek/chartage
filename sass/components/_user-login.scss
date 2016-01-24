@@ -41,7 +41,7 @@
     padding: 15px 0 0;
   }
   input[type=submit] {
-    @extend %button;
+    @extend %buttonAll;
     @include roundcorners(0px);
   }
 }

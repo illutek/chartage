@@ -30,14 +30,14 @@
                             '<li>' . '<a href="' . url('user/' . $user->uid) . '">' . t('My Chartage account') . '</a></li>' .
                             '<li>' . '<a href="' . url('user/' . $user->uid .'/edit') . '">' . '<i class="fa fa-pencil"></i>' . t('Edit') . '</a></li>' .
                             '<li>' . '<a href="' . url('user/' . $user->uid .'/addresses') . '">' . '<i class="fa fa-truck"></i>' . t('My addresses') . '</a>' . '</li>' .
-                            '<li>' . '<a href="' . url('user/' . $user->uid .'/orders') . '">' . t('My orders') . '</a></li>' .
+                            '<li>' . '<a href="' . url('user/' . $user->uid .'/orders') . '">' . '<i class="fa fa-book"></i>' . t('My orders') . '</a></li>' .
                             '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out"></i>' . t('Logout') . '</a></li>' .
                             '</ul>' .
                             '</li>';
                         print '<li>
                         <a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out"></i>' . t('Logout') . '</a>
                         </li>';
-                        print '<li>' .'<a href="cart">' . '<i class="fa fa-shopping-cart fa-lg"></i>' . '</a></li>';
+                        print '<li>' .'<a href=' . base_path(). 'cart>' . '<i class="fa fa-shopping-cart fa-lg"></i>' . '</a></li>';
 
                     } else {
 

@@ -11,7 +11,6 @@
     padding: 5px;
   }
   .cart-block-icon-full {
-
   }
 }
 
@@ -25,7 +24,8 @@ table.cart-block-summary {
 //Cart page
 #uc-cart-view-form {
   input[type='submit'] {
-    @extend %button;
+    @extend %buttonAll;
+    @include roundcorners(0px);
     margin-top: 0;
   }
   & #edit-update {

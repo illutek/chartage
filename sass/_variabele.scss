@@ -5,6 +5,8 @@ $grey-dark: #333333;
 // also the brand-color on mixin boxshadow
 $grey: #aaaaaa;
 
+$orange: #ffb400;
+
 $grey-lighter: #cccccc;
 
 $hover-color: #b27d00;
@@ -12,10 +14,21 @@ $hover-color: #b27d00;
 //=============================
 // ## ++ Placeholders
 //=============================
-%button {
+%buttonAll {
   margin-top: 10px;
   //width: 100%;
   background: $grey;
+  border: none;
+  padding: 10px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+%buttonCart {
+  margin-top: 10px;
+  width: 100%;
+  background: $orange;
   border: none;
   padding: 10px;
   &:hover {
