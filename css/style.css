@@ -110,6 +110,9 @@ a {
     color: #b27d00;
     text-decoration: none; }
 
+input {
+  padding: 5px; }
+
 .section-wrap {
   background: #ffffff;
   margin-bottom: 25px; }
@@ -304,6 +307,9 @@ table.cart-block-summary {
   #uc-cart-view-form tr:hover {
     background-color: #efefef; }
 
+.uc-cart-checkout-form legend {
+  font-size: 18px;
+  padding: 10px 0 5px; }
 .uc-cart-checkout-form input[type='submit'] {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
