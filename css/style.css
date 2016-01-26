@@ -1,20 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Boogaloo);
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-#auth_box input[type=submit], .product_wrapper .btn-default, form.webform-client-form input[type='submit'], #uc-cart-view-form input[type='submit'], .uc-cart-checkout-form input[type='submit'] {
+#auth_box input[type=submit], form.webform-client-form input[type='submit'], #uc-cart-view-form input[type='submit'], .uc-cart-checkout-form input[type='submit'], .btn-default {
   margin-top: 10px;
   background: #aaaaaa;
   border: none;
   padding: 10px; }
-  #auth_box input[type=submit]:hover, .product_wrapper .btn-default:hover, form.webform-client-form input[type='submit']:hover, #uc-cart-view-form input[type='submit']:hover, .uc-cart-checkout-form input[type='submit']:hover {
+  #auth_box input[type=submit]:hover, form.webform-client-form input[type='submit']:hover, #uc-cart-view-form input[type='submit']:hover, .uc-cart-checkout-form input[type='submit']:hover, .btn-default:hover {
     color: #ffffff; }
 
-.product_wrapper .product_info .add-to-cart .form-actions .btn-cart {
+.btn-cart {
   margin-top: 10px;
   width: 100%;
-  background: #ffb400;
+  background: #d7b46a;
   border: none;
   padding: 10px; }
-  .product_wrapper .product_info .add-to-cart .form-actions .btn-cart:hover {
+  .btn-cart:hover {
     color: #ffffff; }
 
 .rounded {
@@ -235,10 +235,6 @@ input {
     margin-bottom: 1.5em; }
     .product_wrapper .product_info .add-to-cart .form-type-uc-quantity input[type=text] {
       text-align: center; }
-  .product_wrapper .product_info .add-to-cart .form-actions .btn-cart {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px; }
   .product_wrapper .message-registered {
     padding: 15px; }
     .product_wrapper .message-registered .fa-user {
@@ -249,10 +245,6 @@ input {
     background: #b27d00;
     display: inline-block;
     margin: 10px 0; }
-  .product_wrapper .btn-default {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px; }
 
 ul.catalog.menu {
   padding: 10px; }
@@ -322,6 +314,16 @@ table.cart-block-summary {
 
 .list-address-wrapper {
   margin-left: 25px; }
+
+.btn-cart {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
+
+.btn-default {
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/ }

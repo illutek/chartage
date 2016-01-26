@@ -11,6 +11,7 @@
                     <?php global $user; ?>
                     <?php if ($user->uid != 0) {
                         print render($content['sell_price']);
+                        print "<input type='submit' class='btn btn-cart form-submit'" . "value='Add to cart'" . ">";
                     } else {
                         print '';
                     } ?>

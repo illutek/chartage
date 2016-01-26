@@ -64,12 +64,6 @@
           text-align: center;
         }
       }
-      .form-actions {
-        .btn-cart {
-          @extend %buttonCart;
-          @include roundcorners(0px);
-        }
-      }
     }
   }
   .message-registered {
@@ -84,10 +78,6 @@
     background: $hover-color;
     display: inline-block;
     margin: 10px 0;
-  }
-  .btn-default {
-    @extend %buttonAll;
-    @include roundcorners(0px);
   }
 }
 

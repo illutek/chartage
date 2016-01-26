@@ -1,0 +1,13 @@
+//==============================================
+// ## ++ Buttons
+//==============================================
+
+.btn-cart {
+  @extend %buttonCart;
+  @include roundcorners(0px);
+}
+
+.btn-default {
+  @extend %buttonAll;
+  @include roundcorners(0px);
+}

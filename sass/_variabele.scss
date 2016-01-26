@@ -7,6 +7,8 @@ $grey: #aaaaaa;
 
 $orange: #ffb400;
 
+$logocolor: #d7b46a;
+
 $grey-lighter: #cccccc;
 
 $hover-color: #b27d00;
@@ -28,7 +30,7 @@ $hover-color: #b27d00;
 %buttonCart {
   margin-top: 10px;
   width: 100%;
-  background: $orange;
+  background: $logocolor;
   border: none;
   padding: 10px;
   &:hover {
