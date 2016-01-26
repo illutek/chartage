@@ -25,7 +25,6 @@ table.cart-block-summary {
 #uc-cart-view-form {
   input[type='submit'] {
     @extend %buttonAll;
-    @include roundcorners(0px);
     margin-top: 0;
   }
   & #edit-update {

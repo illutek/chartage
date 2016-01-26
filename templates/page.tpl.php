@@ -7,7 +7,7 @@
  */
 ?>
 <!-- User region -->
-<?php include 'partials/user-region.inc.php'; ?>
+<?php include 'partials/navbar.inc.php'; ?>
 <div class="container">
     <!-- Header region -->
     <?php include 'partials/header.inc.php'; ?>

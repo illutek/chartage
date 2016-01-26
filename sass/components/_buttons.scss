@@ -10,4 +10,12 @@
 .btn-default {
   @extend %buttonAll;
   @include roundcorners(0px);
+  &:hover {
+    background: $grey;
+    color: #ffffff;
+  }
+}
+
+input[type='submit']{
+  @include roundcorners(0px);
 }
