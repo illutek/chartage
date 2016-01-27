@@ -52,16 +52,18 @@
                             print '';
                         } ?>
                         <?php print render($content['body']); ?>
+                        <div class="row">
+                            <?php
+                            /**
+                             * Als voorlopige oplossing om de sets te tonen via een button
+                             * sets-button.inc.php
+                             * Btn link naat more info form in dit geval naar
+                             */
+                            include 'partials/sets-button.inc.php';
+                            include 'partials/more-info-btn.inc.php';
+                            ?>
+                        </div>
 
-                        <?php
-                        /**
-                         * Als voorlopige oplossing om de sets te tonen via een button
-                         * sets-button.inc.php
-                         * Btn link naat more info form in dit geval naar
-                         */
-                        include 'partials/sets-button.inc.php';
-                        include 'partials/more-info-btn.inc.php';
-                        ?>
 
 
                         <?php if ($user->uid != 0) {

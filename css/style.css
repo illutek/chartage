@@ -113,6 +113,9 @@ a {
 input {
   padding: 5px; }
 
+.fa {
+  padding-right: 10px; }
+
 .section-wrap {
   background: #ffffff;
   margin-bottom: 25px; }
@@ -140,9 +143,6 @@ input {
 
 .dropdown-menu > li > a:hover {
   color: #b27d00; }
-
-.user-region .fa {
-  padding-right: 10px; }
 
 .cd-top {
   display: inline-block;
