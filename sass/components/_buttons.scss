@@ -7,13 +7,18 @@
   @include roundcorners(0px);
 }
 
-.btn-default {
+.btn-default, .button {
   @extend %buttonAll;
   @include roundcorners(0px);
   &:hover {
     background: $grey;
     color: #ffffff;
   }
+}
+
+.btn_more-info {
+  @extend .btn-default;
+  width: 100%;
 }
 
 input[type='submit']{

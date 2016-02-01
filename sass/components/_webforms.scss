@@ -3,7 +3,6 @@
 //==========================================
 form.webform-client-form {
   input {
-    padding: 5px;
     &[readonly='readonly'] {
       border: none;
       color: $hover-color;

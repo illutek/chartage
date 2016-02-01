@@ -3,7 +3,7 @@
 //===========================================
 
 #auth_box {
-  width: 450px;
+  width: 550px;
   a {
     color: #ffffff;
     &:hover {
@@ -17,5 +17,26 @@
   input[type=submit] {
     @extend %buttonAll;
     @include roundcorners(0px);
+  }
+}
+
+#middle_part {
+  legend {
+    font-size: 1.6em;
+  }
+  #edit-uc-addresses {
+  }
+  #edit-legal {
+    margin-top: 40px;
+
+    .form-item-legal-accept {
+      padding-left: 45px;
+      a {
+        color: #000000;
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
   }
 }

@@ -13,10 +13,12 @@
     <?php include 'partials/header.inc.php'; ?>
     <section class="col-md-12 section-wrap">
         <div class="row">
-            <aside class="col-md-3">
-                <?php print render($page['sidebar_first']); ?>
-            </aside>
-            <main class="col-md-9">
+            <?php if ($page['sidebar_first']): ?>
+                <aside class="<?php print $sidebarfirst; ?>">
+                    <?php print render($page['sidebar_first']); ?>
+                </aside>
+            <?php endif; ?>
+            <main class="<?php print $contentlayout; ?>">
                 <div class="row">
                     <?php if ($page['news']): ?>
                         <div class="col-md-12 news">
@@ -61,7 +63,8 @@
             <?php print render($page['watched']); ?>
         </section>
     <?php endif; ?>
-    <!-- Footer region-->
-    <?php include 'partials/footer.inc.php'; ?>
 </div>
+<!-- Footer region-->
+<?php include 'partials/footer.inc.php'; ?>
+
 <a href="#0" class="cd-top">Top</a>

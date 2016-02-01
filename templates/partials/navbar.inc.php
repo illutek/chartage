@@ -36,15 +36,16 @@
                             . '<i class="fa fa-user fa-lg"></i>' . 'My account' . '<span class="caret"></span></a>' .
                             '<ul class="dropdown-menu">' .
                             '<li>' . '<a href="' . url('user/' . $user->uid) . '">' . t('My Chartage account') . '</a></li>' .
-                            '<li>' . '<a href="' . url('user/' . $user->uid . '/edit') . '">' . '<i class="fa fa-pencil"></i>' . t('Edit') . '</a></li>' .
-                            '<li>' . '<a href="' . url('user/' . $user->uid . '/addresses') . '">' . '<i class="fa fa-truck"></i>' . t('My addresses') . '</a>' . '</li>' .
-                            '<li>' . '<a href="' . url('user/' . $user->uid . '/orders') . '">' . '<i class="fa fa-book"></i>' . t('My orders') . '</a></li>' .
-                            '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out"></i>' . t('Logout') . '</a></li>' .
+                            '<li>' . '<a href="' . url('user/' . $user->uid . '/edit') . '">' . '<i class="fa fa-pencil fa-fw"></i>' . t('Edit') . '</a></li>' .
+                            '<li>' . '<a href="' . url('user/' . $user->uid . '/addresses') . '">' . '<i class="fa fa-truck fa-fw"></i>' . t('My addresses') . '</a>' . '</li>' .
+                            '<li>' . '<a href="' . url('user/' . $user->uid . '/orders') . '">' . '<i class="fa fa-book fa-fw"></i>' . t('My orders') . '</a></li>' .
+                            '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-fw"></i>' . t('Logout') . '</a></li>' .
                             '</ul>' .
                             '</li>';
                         print '<li>
                         <a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-lg"></i>' . t('Logout') . '</a>
                         </li>';
+
                     } else {
                         /**
                          * Niet ingelogd 'Login en registeer link worden getoond
@@ -55,9 +56,10 @@
                         print '<li>
                         <a href="' . url('user/register') . '">' . t('Register') . '</a>
                         </li>';
-                    } ?></li>
-                <!-- link naar alle producten -->
-                <li><a href="<?php print base_path() ?>all-products"><i class="fa fa-circle-o fa-lg"></i>All products</a></li>
+                    } ?>
+                    <!-- link naar alle producten -->
+                    <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All products') . '</a></li>'; ?>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php

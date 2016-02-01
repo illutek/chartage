@@ -18,6 +18,8 @@ function webshopchartage_preprocess_html(&$variables)
     //Add external .js and .css
     drupal_add_js('https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', 'external', array('weight' => 1));
 
+    //drupal_add_js('//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js', 'external', array('weight' => 2));
+
     drupal_add_css('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array('type' => 'external'));
 
     // Adding viewport to HTML Header.
@@ -38,6 +40,14 @@ function webshopchartage_preprocess_html(&$variables)
 function webshopchartage_preprocess_page(&$variables)
 {
     $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/images/';
+
+    if (!empty($variables['page']['sidebar_first'])) {
+        $variables['contentlayout'] = 'col-md-9';
+        $variables['sidebarfirst'] = 'col-md-3';
+    }
+    else {
+        $variables['contentlayout'] = 'col-md-12';
+    }
 }
 
 /**
