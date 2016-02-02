@@ -7,11 +7,11 @@
  */
 ?>
 <header class="header-wrap col-md-6">
-        <div class="logo">
-            <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-<?php endif; ?>
-</div>
+    <div class="logo">
+        <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+            </a>
+        <?php endif; ?>
+    </div>
 </header>

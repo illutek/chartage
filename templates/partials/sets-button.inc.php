@@ -7,13 +7,16 @@
  */
 
 $value = field_get_items('node', $node, 'field_set');
+$textSet = t("Related items");
 
 if ($value):
     $contentSet = $content['field_set']['#items'][0]['taxonomy_term']->name;
     ?>
     <div class="product-set col-md-4">
         <a href="<?php print base_path() ?>sets/<?php print $contentSet; ?>">
-            <button type="button" class="btn btn-default"><i class="fa fa-cubes fa-lg"></i>Here the set</button>
+            <button type="button" class="btn btn-default">
+                <i class="fa fa-cubes fa-lg"></i><?php print $textSet; ?>
+            </button>
         </a>
     </div>
 <?php else:
