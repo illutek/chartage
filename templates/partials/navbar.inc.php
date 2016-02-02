@@ -61,17 +61,8 @@
                     <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All products') . '</a></li>'; ?>
 
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <?php
-                if ($user->uid != 0) {
-                    /**
-                     * Ingelogd wordt het cart icon getoond
-                     */
-                    print '<li>' . '<a href=' . base_path() . 'cart>' . '<i class="fa fa-shopping-cart fa-lg"></i>' . '</a></li>';
-                } else {
-                    print '';
-                } ?>
-            </ul>
+            <!-- cart icon met aantal items -->
+            <?php include 'cart-icon-nav-right.inc.php'; ?>
         </div>
     </div>
 </div>

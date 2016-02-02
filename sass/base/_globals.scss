@@ -58,9 +58,18 @@ a {
 
 input {
   padding: 5px;
+  border: solid 1px $grey;
 }
 
-//Margin right fot-r the Font awesome icons
+input[type="checkbox"] {
+  @extend input;
+}
+
+select {
+  @extend input;
+}
+
+//Margin right for the Font awesome icons
 .fa {
   padding-right: 10px;
 }
