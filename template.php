@@ -39,7 +39,7 @@ function webshopchartage_preprocess_html(&$variables)
  */
 function webshopchartage_preprocess_page(&$variables)
 {
-    $variables['images_path'] = $variables['base_path'] . $variables['directory'] . '/images/';
+    $variables['imagesPath'] = $variables['base_path'] . $variables['directory'] . '/images/';
 
     if (!empty($variables['page']['sidebar_first'])) {
         $variables['contentlayout'] = 'col-md-9';
@@ -54,7 +54,9 @@ function webshopchartage_preprocess_page(&$variables)
  * @param $variables
  */
 function webshopchartage_preprocess_node(&$variables){
-
+    $variables['addToCart'] = '<input type="submit" class="btn btn-cart form-submit" ';
+    $variables['addToCart'].= 'value="Add to cart"';
+    $variables['addToCart'].= '>';
 }
 
 /**
