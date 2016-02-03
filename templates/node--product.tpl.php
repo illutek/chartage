@@ -1,16 +1,23 @@
-<?php if ($teaser): ?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Stefan
+ * Date: 26/12/2015
+ * Time: 14:00
+ */
+if ($teaser): ?>
     <div class="product_wrapper_teaser">
         <div class="product_list">
             <a href="<?php print $node_url; ?>">
                 <div class="item">
                     <div class="teaser_prod_img">
-                        <?php print render($content['uc_product_image']); ?>
+                        <?php print $uc_image; ?>
                     </div>
                     <div class="body_teaser"><?php print $title; ?></div>
                     <!-- niet ingelogde user ziet geen prijs -->
                     <?php global $user; ?>
                     <?php if ($user->uid != 0) {
-                        print render($content['sell_price']);
+                        print $uc_sellPrice;
                         /**
                          * variables van template.php
                          */
@@ -25,18 +32,19 @@
 
 <?php else: ?>
     <div class="product_list">
-        <?php print render($title_prefix); ?>
-        <?php if (!$page): ?>
-            <h2 class="title" <?php print $title_attributes; ?>><a
-                    href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
+        <?php print render($title_prefix);
+        if (!$page): ?>
+            <h2 class="title" <?php print $title_attributes; ?>>
+                <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+            </h2>
+        <?php endif;
+        print render($title_suffix); ?>
 
         <div class="content"<?php print $content_attributes; ?>>
             <div class="product_wrapper">
                 <div class="row">
                     <div class="col-md-4 product_img">
-                        <?php print render($content['uc_product_image']); ?>
+                        <?php print $uc_image; ?>
                         <div class="logo-product">
                             <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_products-min.png">
                         </div>
@@ -49,12 +57,12 @@
                         <?php global $user; ?>
                         <?php if ($user->uid != 0) { ?>
                             <div class="sell-price">
-                                <?php print render($content['sell_price']); ?>
+                                <?php print print $uc_sellPrice; ?>
                             </div>
                         <?php } else {
                             print '';
                         } ?>
-                        <?php print render($content['body']); ?>
+                        <?php print $uc_body; ?>
                         <div class="row">
                             <?php
                             /**
@@ -66,12 +74,9 @@
                             include 'partials/more-info-btn.inc.php';
                             ?>
                         </div>
-
-
-
                         <?php if ($user->uid != 0) {
-                            print render($content['add_to_cart']); ?>
-                        <?php } else { ?>
+                            print $uc_addCart;
+                        } else { ?>
                             <div class="message-registered">
                                 <p><i class="fa fa-user"></i>
                                     <?php print t("Only a registered user can place an order."); ?>

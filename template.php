@@ -57,6 +57,13 @@ function webshopchartage_preprocess_node(&$variables){
     $variables['addToCart'] = '<input type="submit" class="btn btn-cart form-submit" ';
     $variables['addToCart'].= 'value="Add to cart"';
     $variables['addToCart'].= '>';
+
+    if (module_exists('uc_product') && uc_product_is_product($variables)){
+        $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
+        $variables['uc_sellPrice'] = drupal_render($variables['content']['sell_price']);
+        $variables['uc_body'] = drupal_render($variables['content']['body']);
+        $variables['uc_addCart'] = drupal_render($variables['content']['add_to_cart']);
+    }
 }
 
 /**

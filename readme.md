@@ -7,11 +7,14 @@ Webshop is enkel toegangkelijk voor professionele klanten, registreren kan via  
 maar een site verandwoordelijke moet zijn goedkeuring geven.  
 Dus er worden geen prijzen getoond en ook geen winkelcart.
 
+##Better login
 
 
 ##Webform More info
 %get[product] = Default value voor de Product SKU
 
+##Product node
+Alle variables ingesteld op template.php
 
 ###Set name
 ´´´
@@ -29,3 +32,7 @@ print $contentSet;
 ?>
 ´´´
 
+
+
+####Nog op te lossen
+Krijg het base_path via template.php niet in orde???
