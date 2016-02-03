@@ -11,13 +11,13 @@ if ($teaser): ?>
             <a href="<?php print $node_url; ?>">
                 <div class="item">
                     <div class="teaser_prod_img">
-                        <?php print $uc_image; ?>
+                        <?php print (isset($uc_image) ? $uc_image : ''); ?>
                     </div>
                     <div class="body_teaser"><?php print $title; ?></div>
                     <!-- niet ingelogde user ziet geen prijs -->
                     <?php global $user; ?>
                     <?php if ($user->uid != 0) {
-                        print $uc_sellPrice;
+                        print (isset($uc_sellPrice) ? $uc_sellPrice : '');
                         /**
                          * variables van template.php
                          */
@@ -44,7 +44,7 @@ if ($teaser): ?>
             <div class="product_wrapper">
                 <div class="row">
                     <div class="col-md-4 product_img">
-                        <?php print $uc_image; ?>
+                        <?php print (isset($uc_image) ? $uc_image : ''); ?>
                         <div class="logo-product">
                             <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_products-min.png">
                         </div>
@@ -57,12 +57,12 @@ if ($teaser): ?>
                         <?php global $user; ?>
                         <?php if ($user->uid != 0) { ?>
                             <div class="sell-price">
-                                <?php print print $uc_sellPrice; ?>
+                                <?php print (isset($uc_sellPrice) ? $uc_sellPrice : ''); ?>
                             </div>
                         <?php } else {
                             print '';
                         } ?>
-                        <?php print $uc_body; ?>
+                        <?php print (isset($uc_body) ? $uc_body : ''); ?>
                         <div class="row">
                             <?php
                             /**
