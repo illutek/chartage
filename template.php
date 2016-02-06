@@ -54,11 +54,8 @@ function webshopchartage_preprocess_page(&$variables)
  * @param $variables
  */
 function webshopchartage_preprocess_node(&$variables){
-    $variables['addToCart'] = '<input type="submit" class="btn btn-cart form-submit" ';
-    $variables['addToCart'].= 'value="More"';
-    $variables['addToCart'].= '>';
-
-
+    $variables['addToCart'] = '<i class="fa fa-info"></i> ';
+    $variables['addToCart'].= 'Details';
 
     if (module_exists('uc_product') && uc_product_is_product($variables)){
         $variables['uc_image'] = drupal_render($variables['content']['uc_product_image']);
