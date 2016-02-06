@@ -22,6 +22,7 @@ if ($teaser): ?>
                          * variables van template.php
                          */
                         print $addToCart;
+                        print $uc_addCart;
                     } else {
                         print '';
                     } ?>
