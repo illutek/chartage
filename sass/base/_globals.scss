@@ -13,10 +13,10 @@ body {
   background-attachment: fixed;
   background-position: center bottom;
   font-family: $font-verdana;
-  font-size: $fontsize-basic +2;
+  font-size: $fontsize-basic;
   line-height: 1.5;
   font-weight: 400;
-
+  font-size: $fontsize-basic;
 }
 
 p {
@@ -24,19 +24,19 @@ p {
 }
 
 h1 {
-  font-size: $fontsize-basic +24;
+  font-size: $fontsize-basic +1.25em; //36px / 16px
 }
 
 h2 {
-  font-size: $fontsize-basic +16;
+  font-size: $fontsize-basic +0.875em; //30px / 16px
 }
 
 h3 {
-  font-size: $fontsize-basic +12;
+  font-size: $fontsize-basic +0.5em; //24px / 16px
 }
 
 h4 {
-  font-size: $fontsize-basic +6;
+  font-size: $fontsize-basic +0.125em; //18px / 16px
 }
 
 h5 {

@@ -78,27 +78,28 @@ body {
   background-attachment: fixed;
   background-position: center bottom;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.5;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 0.875em; }
 
 p {
-  margin: 0 20px; }
+  margin: 0 0 20px; }
 
 h1 {
-  font-size: 36px; }
+  font-size: 2.125em; }
 
 h2 {
-  font-size: 28px; }
+  font-size: 1.75em; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 1.375em; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 1em; }
 
 h5 {
-  font-size: 12px; }
+  font-size: 0.875em; }
 
 h1, h2, h3, h4 {
   margin-top: 20px;
@@ -119,7 +120,8 @@ input, input[type="checkbox"], select {
 
 .section-wrap {
   background: #ffffff;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  overflow: hidden; }
 
 .content-wrap {
   padding-bottom: 50px; }
@@ -207,6 +209,9 @@ footer {
       #middle_part #edit-legal .form-item-legal-accept a:hover {
         color: #b27d00; }
 
+.form-item-address-default-shipping-item {
+  display: none; }
+
 .product_wrapper_teaser, .region-watched .product_wrapper_teaser {
   padding: 10px;
   width: 205px;
@@ -290,6 +295,8 @@ form.webform-client-form .grippie {
   margin: 20px 0;
   padding: 5px;
   text-align: center; }
+  .block-uc-cart h2 {
+    font-size: 1.375em; }
   .block-uc-cart td {
     padding: 5px; }
 

@@ -55,7 +55,7 @@ function webshopchartage_preprocess_page(&$variables)
  */
 function webshopchartage_preprocess_node(&$variables){
     $variables['addToCart'] = '<input type="submit" class="btn btn-cart form-submit" ';
-    $variables['addToCart'].= 'value="Add to cart"';
+    $variables['addToCart'].= 'value="More"';
     $variables['addToCart'].= '>';
 
     if (module_exists('uc_product') && uc_product_is_product($variables)){
