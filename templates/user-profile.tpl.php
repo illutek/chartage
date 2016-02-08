@@ -36,8 +36,6 @@
 ?>
 <div class="profile"<?php print $attributes; ?>>
     <?php print render($user_profile); ?>
-
-
     <div class="url-user">
         <?php print '<h3>' . t('Useful links') . '</h3>';
         print '<i class="fa fa-home fa-fw"></i>' . '<a href=' . base_path() .

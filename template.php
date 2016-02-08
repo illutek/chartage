@@ -90,4 +90,7 @@ function webshopchartage_preprocess_button(&$variables)
     if (stristr($variables['element']['#value'], 'Cancel') !== FALSE) {
         $variables['element']['#attributes']['class'][] = 'btn-cancel';
     }
+    if (stristr($variables['element']['#value'], 'Remove') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-remove';
+    }
 }
