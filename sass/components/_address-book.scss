@@ -5,3 +5,13 @@
   margin-left: 25px;
 }
 
+//hide these two fields on the registration page (better login form)
+tr {
+  &.field-default_shipping_item {
+    display: none;
+  }
+  &.field-default_billing_item {
+    display: none;
+  }
+}
+

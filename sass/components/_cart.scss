@@ -31,7 +31,13 @@ table.cart-block-summary {
     margin-top: 0;
   }
   & #edit-update {
-    margin-right: 10px;
+    margin: 0 10px;
+  }
+  .btn.btn-remove {
+    background: #ffffff;
+    &:hover {
+      color: #000000;
+    }
   }
   td {
     padding: 5px;

@@ -32,7 +32,8 @@ print $contentSet;
 ?>
 ´´´
 
-
+###Not done
+Maar toch gedaan in de module ubercart/uc_cart/uc_cart.module t('Checkout') vervangen door t('Order') (2x)
 
 ####Nog op te lossen
 Krijg het base_path via template.php niet in orde???
