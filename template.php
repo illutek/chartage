@@ -69,6 +69,15 @@ function webshopchartage_preprocess_node(&$variables){
 
 /**
  * @param $variables
+ * User profile page
+ */
+function webshopchartage_preprocess_user_profile(&$variables) {
+    $variables['toFront']= t('To the home page');
+    $variables['allProducts'] = t('See all products');
+}
+
+/**
+ * @param $variables
  */
 function webshopchartage_preprocess_button(&$variables)
 {
