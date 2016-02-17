@@ -6,6 +6,7 @@
  * Time: 14:00
  */
 if ($teaser): ?>
+    
     <div class="product_wrapper_teaser">
         <div class="product_list">
             <a href="<?php print $node_url; ?>">

@@ -93,4 +93,7 @@ function webshopchartage_preprocess_button(&$variables)
     if (stristr($variables['element']['#value'], 'Remove') !== FALSE) {
         $variables['element']['#attributes']['class'][] = 'btn-remove';
     }
+    if (stristr($variables['element']['#value'], 'Submit order') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-cart';
+    }
 }
