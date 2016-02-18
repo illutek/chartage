@@ -6,7 +6,7 @@
  * Time: 14:00
  */
 if ($teaser): ?>
-    
+
     <div class="product_wrapper_teaser">
         <div class="product_list">
             <a href="<?php print $node_url; ?>">
@@ -22,13 +22,25 @@ if ($teaser): ?>
                         /**
                          * variables van template.php
                          */
-                        print $addToCart;
-                        print $uc_addCart;
+                        print $details;
+
                     } else {
                         print '';
                     } ?>
                 </div>
             </a>
+            <?php
+            /**
+             * variables van template.php
+             * add to cart buiten de a href anders is deze
+             * gewoon een link naar de node van het product
+             */
+            global $user; ?>
+            <?php if ($user->uid != 0) {
+                print $uc_addCart;
+            } else {
+                print '';
+            } ?>
         </div>
     </div>
 
