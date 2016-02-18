@@ -42,9 +42,8 @@
                             '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-fw"></i>' . t('Logout') . '</a></li>' .
                             '</ul>' .
                             '</li>';
-                        print '<li>
-                        <a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-lg"></i>' . t('Logout') . '</a>
-                        </li>';
+                        include 'dashboard.inc.php';
+                        print '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-lg"></i>' . t('Logout') . '</a>' . '</li>';
 
                     } else {
                         /**
