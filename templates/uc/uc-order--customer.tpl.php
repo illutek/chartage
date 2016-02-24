@@ -92,7 +92,7 @@
                         <table cellpadding="4" cellspacing="0" border="0" width="100%"
                                style="font-family: verdana, arial, helvetica; font-size: small;">
                             <tr>
-                                <td colspan="2" bgcolor="#006699" style="color: white;">
+                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
                                     <b><?php print t('Purchasing Information:'); ?></b>
                                 </td>
                             </tr>
@@ -140,16 +140,25 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td nowrap="nowrap">
+                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
                                     <b><?php print t('Payment Method:'); ?></b>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><?php print t('ONLY BANK TRANSFER'); ?></p>
+
+                                    <p><?php print t('COSTS WIRE TRANSFER (if any) ARE BORN BY CUSTOMER'); ?></p>
+                                </td>
+                            </tr>
+                            <tr>
                                 <td width="98%">
                                     <?php print $order_payment_method; ?>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td colspan="2" bgcolor="#006699" style="color: white;">
+                                <td colspan="2" bgcolor="#b27d00" style="color: white;">
                                     <b><?php print t('Order Summary:'); ?></b>
                                 </td>
                             </tr>
@@ -264,35 +273,31 @@
                                 </td>
                             </tr>
 
-                            <?php if ($help_text || $email_text || $store_footer): ?>
+                            <?php if ($email_text || $store_footer): ?>
                                 <tr>
-                                    <td colspan="2">
-                                        <hr noshade="noshade" size="1"/>
-                                        <br/>
-
-                                        <?php if ($help_text): ?>
-                                            <p><b><?php print t('Where can I get help with reviewing my order?'); ?></b><br/>
-                                                <?php print t('To learn more about managing your orders on !store_link, please visit our <a href="!store_help_url">help page</a>.', array('!store_link' => $store_link, '!store_help_url' => $store_help_url)); ?>
-                                                <br/></p>
-                                        <?php endif; ?>
-
-                                        <?php if ($email_text): ?>
-                                            <p><?php print t('Payment order:'); ?></p>
-                                            <p><?php print t('ONLY BANK TRANSFER'); ?></p>
-                                            <p><?php print t('COSTS WIRE TRANSFER (if any) ARE BORN BY CUSTOMER'); ?></p>
-                                            <p><?php print t('SHIPPING DETAILS'); ?></p>
-                                            <p><?php print t('in Belgium: above 250.00Euro excl. VAT: free transport. Below 250.00Euro excl. VAT: 10.00Euro +VAT'); ?></p>
-                                            <p><?php print t('abroad: customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
-
-                                            <p><?php print t('Thanks again for shopping with us.'); ?></p>
-                                        <?php endif; ?>
-
-                                        <?php if ($store_footer): ?>
-                                            <p>
-                                                <b><?php print $store_link; ?></b><br/><b><?php print $site_slogan; ?></b>
-                                            </p>
-                                        <?php endif; ?>
+                                <?php if ($email_text): ?>
+                                    <td colspan="2" bgcolor="#b27d00" style="color: white;">
+                                        <b><?php print t('SHIPPING DETAILS:'); ?></b>
                                     </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p><?php print t('in Belgium: above 250.00Euro excl. VAT: free transport. Below 250.00Euro excl. VAT: 10.00Euro +VAT'); ?></p>
+
+                                            <p><?php print t('abroad: customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                    <td>
+                                    <p><?php print t('Thanks again for shopping with us.'); ?></p>
+                                <?php endif; ?>
+
+                                <?php if ($store_footer): ?>
+                                    <p>
+                                        <b><?php print $store_link; ?></b><br/><b><?php print $site_slogan; ?></b>
+                                    </p>
+                                <?php endif; ?>
+                                </td>
                                 </tr>
                             <?php endif; ?>
 
