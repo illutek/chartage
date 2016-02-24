@@ -32,6 +32,13 @@ print $contentSet;
 ?>
 ´´´
 
+###Aanpassing login form
+####Module email_registration aanpassing
+Wil enkel het e-mail address zien.  
+In de file email_registration.module op regel 147 t('E-mail or username') vervangen door t('E-mail')  
+en op regel 150 t('Enter your e-mail address or username.') vervangen door t('Enter your e-mail address.')
+
+
 ###Not done
 Maar toch gedaan in de module ubercart/uc_cart/uc_cart.module t('Checkout') vervangen door t('Order') (2x)
 
