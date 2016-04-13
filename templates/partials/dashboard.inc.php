@@ -9,4 +9,7 @@ if (in_array('editor', array_values($user->roles))) { ?>
     <li>
         <a href="<?php print base_path() ?>admin/dashboard">Dashboard</a>
     </li>
+    <li>
+        <a href="<?php print base_path() ?>node/add/product">Add product</a>
+    </li>
 <?php } ?>

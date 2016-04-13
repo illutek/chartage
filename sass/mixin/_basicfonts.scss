@@ -33,12 +33,3 @@ $font-lucida: "Lucida Console", Monaco, monospace;
 
 //basic font-size is 16px by reset by meyerweb
 $fontsize-basic: 0.875em; //14px / 16px
-
-//=========================================
-// ## ++ google fonts
-//==========================================
-@import url(http://fonts.googleapis.com/css?family=Boogaloo);
-$font-boogaloo: Boogaloo, cursive;
-
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-$font-raleway: 'Raleway', sans-serif;

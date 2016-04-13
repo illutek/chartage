@@ -16,6 +16,11 @@
   }
 }
 
+.btn-search {
+  @extend %buttonAll;
+  margin-top: 0;
+}
+
 .btn_more-info {
   @extend .btn-default;
   width: 100%;

@@ -96,6 +96,9 @@ function webshopchartage_preprocess_button(&$variables)
     if (stristr($variables['element']['#value'], 'Submit order') !== FALSE) {
         $variables['element']['#attributes']['class'][] = 'btn-cart';
     }
+    if (stristr($variables['element']['#value'], 'Search') !== FALSE) {
+        $variables['element']['#attributes']['class'][] = 'btn-search';
+    }
 }
 
 /**
@@ -111,3 +114,4 @@ function webshopchartage_form_user_login_alter(&$form, &$form_state) {
     $form['name']['#element_validate'][] = 'email_registration_user_login_validate';
     $form['pass']['#description'] = t('Enter the password that accompanies your e-mail.');
 }
+

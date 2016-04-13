@@ -3,7 +3,7 @@
 //==========================================
 
 body {
-  background: url("../images/background.jpg");
+  background: url("../images/background_kimmy001.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,9 +49,9 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: $grey-dark;
+  color: $hover-color;
   &:hover {
-    color: $hover-color;
+    color: $grey-dark;
     text-decoration: none;
   }
 }

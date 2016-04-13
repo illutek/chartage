@@ -38,7 +38,19 @@
   }
 }
 
-//de node product
+// ============================================
+// opmaak pager onder producten
+// ============================================
+.item-list ul li {
+  margin: 0;
+}
+.pager li>a, .pager li>span {
+  border-radius: 0;
+}
+
+// ================================================
+// de node product
+// ================================================
 .product_wrapper {
   padding: 50px;
   margin-bottom: 25px;

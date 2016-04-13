@@ -13,15 +13,12 @@
                 <p><a href="<?php print base_path() ?>legal">
                         <?php print t("Terms and Conditions"); ?>
                     </a>  |
-                    <a href="<?php print base_path() ?>privacy">
-                        <?php print t("Privacy"); ?>
-                    </a> |
                     <a href="<?php print base_path() ?>cookies">
                         <?php print t("Cookies"); ?>
                     </a>
                 </p>
                 <p>&copy; 2015 - <?php echo date("Y"); ?> Chartage</p>
-                <p>TRADE BRUSSELS<br> ATOMIUMSQUARE 1 B91 | 1020 BRUSSELS | TEL : 02/478 50 50</p>
+                <p>TRADE BRUSSELS<br> ATOMIUMSQUARE 1 B91 | 1020 BRUSSELS | TEL : 0032 2 478 50 50</p>
             </div>
             <div class="col-md-6 mail-chimp">
                 <!-- Begin MailChimp Signup Form -->

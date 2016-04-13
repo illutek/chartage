@@ -53,12 +53,7 @@
                                     <td>
                                         <?php print $site_logo; ?>
                                     </td>
-                                    <td width="98%">
-                                        <div style="padding-left: 1em;">
-                                            <span style="font-size: large;"><?php print $store_name; ?></span><br/>
-                                            <?php print $site_slogan; ?>
-                                        </div>
-                                    </td>
+
                                     <td nowrap="nowrap">
                                         <?php print $store_address; ?><br/><?php print $store_phone; ?>
                                     </td>
@@ -106,7 +101,6 @@
                             </tr>
                             <tr>
                                 <td colspan="2">
-
                                     <table width="100%" cellspacing="0" cellpadding="0"
                                            style="font-family: verdana, arial, helvetica; font-size: small;">
                                         <tr>
@@ -128,7 +122,6 @@
                                             <?php endif; ?>
                                         </tr>
                                     </table>
-
                                 </td>
                             </tr>
                             <tr>
@@ -148,7 +141,7 @@
                                 <td>
                                     <p><?php print t('ONLY BANK TRANSFER'); ?></p>
 
-                                    <p><?php print t('COSTS WIRE TRANSFER (if any) ARE BORN BY CUSTOMER'); ?></p>
+                                    <p><?php print t('COSTS WIRE TRANSFER (if any) ARE BORNE BY CUSTOMER'); ?></p>
                                 </td>
                             </tr>
                             <tr>
@@ -225,14 +218,11 @@
                                                     <?php print $item['formatted_amount']; ?>
                                                 </td>
                                             </tr>
-
                                         <?php endforeach; ?>
-
                                         <tr>
                                             <td>&nbsp;</td>
                                             <td>------</td>
                                         </tr>
-
                                         <tr>
                                             <td nowrap="nowrap">
                                                 <b><?php print t('Total for this Order:'); ?>&nbsp;</b>
@@ -241,7 +231,6 @@
                                                 <b><?php print $order_total; ?></b>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td colspan="2">
                                                 <br/><br/><b><?php print t('Products on order:'); ?>&nbsp;</b>
@@ -255,21 +244,25 @@
                                                                 <b><?php print $product->qty; ?> x </b>
                                                             </td>
                                                             <td width="98%">
+
                                                                 <b><?php print $product->title; ?>
                                                                     - <?php print $product->total_price; ?></b>
                                                                 <?php print $product->individual_price; ?><br/>
-                                                                <?php print t('SKU'); ?>
-                                                                : <?php print $product->model; ?><br/>
+                                                                <?php print t('SKU'); ?>: <?php print $product->model; ?><br/>
                                                                 <?php print $product->details; ?>
                                                             </td>
                                                         </tr>
                                                     <?php endforeach; ?>
-                                                </table>
 
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <b>Total for this Order exclusive VAT:</b>
                                             </td>
                                         </tr>
                                     </table>
-
                                 </td>
                             </tr>
 
@@ -282,13 +275,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p><?php print t('in Belgium: above 250.00Euro excl. VAT: free transport. Below 250.00Euro excl. VAT: 10.00Euro +VAT'); ?></p>
-
-                                            <p><?php print t('abroad: customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
+                                            <p><b><?php print t('Belgium:'); ?></b></p>
+                                            <p><?php print t('Above €250.00 excl. VAT: free transport.'); ?></p>
+                                            <p><?php print t('Below €250.00 excl. VAT: €10.00 +VAT'); ?></p>
+                                            <p><b><?php print t('abroad:'); ?></b></p>
+                                            <p><?php print t('customer always pays the transportation depending on dimensions and weight of the box. The transportation costs will be put on the bill.'); ?></p>
                                         </td>
                                     </tr>
                                     <tr>
-                                    <td>
+                                    <td colspan="2">
+                                    <hr>
                                     <p><?php print t('Thanks again for shopping with us.'); ?></p>
                                 <?php endif; ?>
 
@@ -300,7 +296,6 @@
                                 </td>
                                 </tr>
                             <?php endif; ?>
-
                         </table>
                     </td>
                 </tr>
