@@ -40,7 +40,10 @@ en op regel 150 t('Enter your e-mail address or username.') vervangen door t('En
 
 
 ###Not done
-Maar toch gedaan in de module ubercart/uc_cart/uc_cart.module t('Checkout') vervangen door t('Order') (2x)
+Maar toch gedaan in de module  
+ubercart/uc_cart/uc_cart.module t('Checkout') vervangen door t('Order') (2x)  
+ubercart/uc_cart/uc_cart.page.inc op regel 90 'Review order' vervangen door 'Checkout order before submit'
+
 
 ####Nog op te lossen
 Krijg het base_path via template.php niet in orde???

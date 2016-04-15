@@ -225,7 +225,7 @@
                                         </tr>
                                         <tr>
                                             <td nowrap="nowrap">
-                                                <b><?php print t('Total for this Order:'); ?>&nbsp;</b>
+                                                <b><?php print t('Total for this order exclusive VAT:'); ?>&nbsp;</b>
                                             </td>
                                             <td>
                                                 <b><?php print $order_total; ?></b>
@@ -233,7 +233,7 @@
                                         </tr>
                                         <tr>
                                             <td colspan="2">
-                                                <br/><br/><b><?php print t('Products on order:'); ?>&nbsp;</b>
+                                                <br/><br/><b><?php print t('Products on order exclusive VAT:'); ?>&nbsp;</b>
 
                                                 <table width="100%"
                                                        style="font-family: verdana, arial, helvetica; font-size: small;">
@@ -255,11 +255,6 @@
                                                     <?php endforeach; ?>
 
                                                 </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <b>Total for this Order exclusive VAT:</b>
                                             </td>
                                         </tr>
                                     </table>
