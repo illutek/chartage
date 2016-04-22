@@ -342,6 +342,8 @@ tr.field-default_shipping_item {
   display: none; }
 tr.field-default_billing_item {
   display: none; }
+tr.field-address_name {
+  display: none; }
 
 .btn-cart {
   -moz-border-radius: 0px;
