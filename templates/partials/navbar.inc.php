@@ -43,6 +43,10 @@
                             '</ul>' .
                             '</li>';
                         include 'dashboard.inc.php';
+                        /**
+                         * link naar alle producten op 2016-06-15 enkel zichtbaar voor ingelogde gebruikers
+                         */
+                        print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All products') . '</a></li>';
                         print '<li>' . '<a href="' . url('user/logout') . '">' . '<i class="fa fa-sign-out fa-lg"></i>' . t('Logout') . '</a>' . '</li>';
 
                     } else {
@@ -56,8 +60,7 @@
                         <a href="' . url('user/register') . '">' . t('Register') . '</a>
                         </li>';
                     } ?>
-                    <!-- link naar alle producten -->
-                    <?php print '<li>' . '<a href=' . base_path() . 'all-products>' . '<i class="fa fa-circle-o fa-lg"></i>' . t('All products') . '</a></li>'; ?>
+
 
             </ul>
             <!-- cart icon met aantal items -->
