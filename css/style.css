@@ -140,6 +140,11 @@ footer {
 .mail-chimp {
   font-size: 20px; }
 
+.maintenance {
+  color: white; }
+  .maintenance #logo-title {
+    margin-top: 35px; }
+
 .user-region {
   background: #ffffff; }
 
@@ -553,6 +558,13 @@ fieldset#edit-terms-of-use.form-wrapper {
 
 p.search-info {
   display: none; }
+
+div.messages {
+  padding: 15px 15px 15px 50px; }
+  div.messages.status {
+    font-weight: bold;
+    background-color: #00be00;
+    border-color: #007100; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/ }

@@ -1,0 +1,12 @@
+//================================
+// @@ ++ Status Messages
+//================================
+
+div.messages {
+  padding: 15px 15px 15px 50px;
+  &.status {
+    font-weight: bold;
+    background-color: #00be00;
+    border-color: #007100;
+  }
+}
