@@ -75,6 +75,7 @@ body {
   background-color: #1a1e21;
   background-attachment: fixed;
   background-position: center bottom;
+  margin-top: 50px;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 0.875em;
   line-height: 1.5;
@@ -188,7 +189,8 @@ footer {
     opacity: 1; }
 
 #auth_box {
-  width: 550px; }
+  width: 550px;
+  padding: 0; }
   #auth_box a {
     color: #ffffff; }
     #auth_box a:hover {
@@ -273,14 +275,20 @@ footer {
     display: inline-block;
     margin: 10px 0; }
 
-ul.catalog.menu {
-  padding: 10px; }
-  ul.catalog.menu li.leaf {
-    list-style-image: none;
-    list-style-type: none;
-    padding: 5px 0; }
-    ul.catalog.menu li.leaf a:hover {
-      text-decoration: none; }
+.block-uc-catalog {
+  -webkit-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
+  -moz-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
+  box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
+  padding: 15px;
+  margin-top: 25px; }
+  .block-uc-catalog ul.catalog.menu {
+    padding: 10px; }
+    .block-uc-catalog ul.catalog.menu li.leaf {
+      list-style-image: none;
+      list-style-type: none;
+      padding: 5px 0; }
+      .block-uc-catalog ul.catalog.menu li.leaf a:hover {
+        text-decoration: none; }
 
 form.webform-client-form input[readonly='readonly'], form.webform-client-form select[readonly='readonly'] {
   border: none;
@@ -297,7 +305,9 @@ form.webform-client-form .grippie {
     padding: 5px; }
 
 .block-uc-cart {
-  border: solid 1px #cccccc;
+  -webkit-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
+  -moz-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
+  box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.8);
   margin: 20px 0;
   padding: 5px;
   text-align: center; }
@@ -565,6 +575,9 @@ div.messages {
     font-weight: bold;
     background-color: #00be00;
     border-color: #007100; }
+
+#toolbar {
+  margin: 50px -20px; }
 
 @media only screen and (max-width: 1366px) {
   /* css code voor tablets in landscape mode*/ }

@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="user-region">
+<div class="user-region navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed"
