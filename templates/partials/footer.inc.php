@@ -21,11 +21,16 @@
                 <p>TRADE BRUSSELS<br> ATOMIUMSQUARE 1 B91 | 1020 BRUSSELS | TEL : 0032 2 478 50 50</p>
             </div>
             <div class="col-md-6 mail-chimp">
+                <?php global $user; ?>
+                <?php if ($user->uid != 0) { ?>
                 <!-- Begin MailChimp Signup Form -->
                 <a href="http://eepurl.com/Iu6Kj" target="_blank">
                     <i class="fa fa-envelope-o fa-lg"></i>
                     <?php print t("Subscribe to our mailing list"); ?>
                 </a>
+                <?php } else {
+                    print '';
+                } ?>
             </div>
         </div>
     </div>
