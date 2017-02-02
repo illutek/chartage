@@ -1,9 +1,9 @@
-#auth_box input[type=submit], #auth_box select[type=submit], form.webform-client-form input[type='submit'], form.webform-client-form select[type='submit'], #uc-cart-view-form input[type='submit'], #uc-cart-view-form select[type='submit'], .uc-cart-checkout-form input[type='submit'], .uc-cart-checkout-form select[type='submit'], .btn-default, .btn_more-info, .button, .btn-search {
+#auth_box input[type="submit"], #auth_box select[type="submit"], form.webform-client-form input[type='submit'], form.webform-client-form select[type='submit'], #uc-cart-view-form input[type='submit'], #uc-cart-view-form select[type='submit'], .uc-cart-checkout-form input[type='submit'], .uc-cart-checkout-form select[type='submit'], .btn-default, .btn_more-info, .button, .btn-search {
   margin-top: 10px;
   background: #aaaaaa;
   border: none;
   padding: 10px; }
-  #auth_box input[type=submit]:hover, #auth_box select[type=submit]:hover, form.webform-client-form input[type='submit']:hover, form.webform-client-form select[type='submit']:hover, #uc-cart-view-form input[type='submit']:hover, #uc-cart-view-form select[type='submit']:hover, .uc-cart-checkout-form input[type='submit']:hover, .uc-cart-checkout-form select[type='submit']:hover, .btn-default:hover, .btn_more-info:hover, .button:hover, .btn-search:hover {
+  #auth_box input[type="submit"]:hover, #auth_box select[type="submit"]:hover, form.webform-client-form input[type='submit']:hover, form.webform-client-form select[type='submit']:hover, #uc-cart-view-form input[type='submit']:hover, #uc-cart-view-form select[type='submit']:hover, .uc-cart-checkout-form input[type='submit']:hover, .uc-cart-checkout-form select[type='submit']:hover, .btn-default:hover, .btn_more-info:hover, .button:hover, .btn-search:hover {
     color: #ffffff; }
 
 .btn-cart {
@@ -198,7 +198,18 @@ footer {
       text-decoration: none; }
   #auth_box .password_link, #auth_box .register_link {
     padding: 15px 0 0; }
-  #auth_box input[type=submit], #auth_box select[type=submit] {
+  #auth_box #field-telephone-add-more-wrapper label {
+    float: left;
+    font-weight: bold;
+    padding-right: 5px;
+    padding-top: 3px; }
+  #auth_box #field-telephone-add-more-wrapper input[type="text"], #auth_box #field-telephone-add-more-wrapper select[type="text"] {
+    width: 130px; }
+  #auth_box input[type="checkbox"], #auth_box select[type="checkbox"], #auth_box select {
+    border-radius: 3px;
+    border: 1px #cccccc solid;
+    padding: 7px 0; }
+  #auth_box input[type="submit"], #auth_box select[type="submit"] {
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px; }

@@ -15,7 +15,23 @@
   .password_link, .register_link {
     padding: 15px 0 0;
   }
-  input[type=submit] {
+  #field-telephone-add-more-wrapper {
+    label {
+      float: left;
+      font-weight: bold;
+      padding-right: 5px;
+      padding-top: 3px;
+    }
+    input[type="text"] {
+      width: 130px;
+    }
+  }
+  input[type="checkbox"], select {
+    border-radius: 3px;
+    border: 1px #cccccc solid;
+    padding: 7px 0;
+  }
+  input[type="submit"] {
     @extend %buttonAll;
     @include roundcorners(0px);
   }
@@ -41,4 +57,3 @@
     }
   }
 }
-
