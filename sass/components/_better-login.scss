@@ -15,7 +15,10 @@
   .password_link, .register_link {
     padding: 15px 0 0;
   }
-  #field-telephone-add-more-wrapper {
+  //#field-telephone-add-more-wrapper, .field-phone-number-add-more-wrapper
+  // eerst local aangemaakt met als label Telephone vandaar #field-telephone-add-more-wrapper
+  // online onmiddellijk
+  #field-phone-number-add-more-wrapper {
     label {
       float: left;
       font-weight: bold;

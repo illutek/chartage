@@ -198,12 +198,12 @@ footer {
       text-decoration: none; }
   #auth_box .password_link, #auth_box .register_link {
     padding: 15px 0 0; }
-  #auth_box #field-telephone-add-more-wrapper label {
+  #auth_box #field-phone-number-add-more-wrapper label {
     float: left;
     font-weight: bold;
     padding-right: 5px;
     padding-top: 3px; }
-  #auth_box #field-telephone-add-more-wrapper input[type="text"], #auth_box #field-telephone-add-more-wrapper select[type="text"] {
+  #auth_box #field-phone-number-add-more-wrapper input[type="text"], #auth_box #field-phone-number-add-more-wrapper select[type="text"] {
     width: 130px; }
   #auth_box input[type="checkbox"], #auth_box select[type="checkbox"], #auth_box select {
     border-radius: 3px;
