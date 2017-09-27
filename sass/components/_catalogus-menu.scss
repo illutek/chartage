@@ -8,10 +8,12 @@
   margin-top: 25px;
   ul.catalog.menu {
     padding: 10px;
+    li.leaf, li.collapsed {
+      padding: 5px 0;
+    }
     li.leaf {
       list-style-image: none;
       list-style-type: none;
-      padding: 5px 0;
       a {
         &:hover {
           text-decoration: none;

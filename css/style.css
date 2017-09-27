@@ -294,10 +294,11 @@ footer {
   margin-top: 25px; }
   .block-uc-catalog ul.catalog.menu {
     padding: 10px; }
+    .block-uc-catalog ul.catalog.menu li.leaf, .block-uc-catalog ul.catalog.menu li.collapsed {
+      padding: 5px 0; }
     .block-uc-catalog ul.catalog.menu li.leaf {
       list-style-image: none;
-      list-style-type: none;
-      padding: 5px 0; }
+      list-style-type: none; }
       .block-uc-catalog ul.catalog.menu li.leaf a:hover {
         text-decoration: none; }
 
