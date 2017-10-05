@@ -114,6 +114,9 @@ input, input[type="checkbox"], select {
   padding: 5px;
   border: solid 1px #aaaaaa; }
 
+strong {
+  font-weight: bold; }
+
 .fa {
   padding-right: 10px; }
 

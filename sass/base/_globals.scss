@@ -70,6 +70,10 @@ select {
   @extend input;
 }
 
+strong {
+  font-weight: bold;
+}
+
 //Margin right for the Font awesome icons
 .fa {
   padding-right: 10px;
