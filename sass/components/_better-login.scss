@@ -19,14 +19,21 @@
   // eerst local aangemaakt met als label Telephone vandaar #field-telephone-add-more-wrapper
   // online onmiddellijk
   #field-phone-number-add-more-wrapper {
+    .form-type-textfield {
+      margin-top: 0.2em;
+    }
     label {
       float: left;
       font-weight: bold;
-      padding-right: 5px;
+      padding-right: 6px;
       padding-top: 3px;
     }
     input[type="text"] {
-      width: 130px;
+      width: 100%;
+      padding-left: 35px;
+    }
+    ul.country-list {
+      width: 320px;
     }
   }
   input[type="checkbox"], select {
