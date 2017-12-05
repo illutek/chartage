@@ -55,15 +55,23 @@ if ($teaser): ?>
     print render($title_suffix); ?>
 
     <div class="content"<?php print $content_attributes; ?>>
-      <div class="product_wrapper">
+      <div class="product">
         <div class="row">
-          <div class="col-md-4 product_img">
-            <?php print (isset($uc_image) ? $uc_image : ''); ?>
-            <div class="logo-product">
-              <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_products-min.png">
-            </div>
+
+          <div class="col-md-5">
+              <div class="product__section-image">
+                  <div class="product__img">
+                      <?php print (isset($uc_image) ? $uc_image : ''); ?>
+                  </div>
+
+                  <div class="product__logo">
+                      <img src="<?php print base_path() . path_to_theme(); ?>/images/logo_products-min.png">
+                  </div>
+              </div>
+
           </div>
-          <div class="col-md-8 product_info">
+
+          <div class="col-md-7 product_info">
             <div class="sku">
               <?php print t("Item number:"); ?><?php print_r($model) ?>
             </div>
