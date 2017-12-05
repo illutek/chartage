@@ -4,7 +4,7 @@ description = Webshop voor de professionele klanten van Chartage
 core = 7.x
 
 ;CSS
-stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = bootstrap/bootstrap.min.css
 stylesheets[all][] = css/style.css
 
 ;JS
