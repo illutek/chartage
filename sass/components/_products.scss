@@ -44,28 +44,66 @@
 .item-list ul li {
   margin: 0;
 }
-.pager li>a, .pager li>span {
+
+.pager li > a, .pager li > span {
   border-radius: 0;
 }
 
 // ================================================
 // de node product
 // ================================================
-.product_wrapper {
-  padding: 50px;
+.product {
+  padding: 25px;
   margin-bottom: 25px;
   @include boxshadow();
-  .product_img {
+
+  &-img-section {
     overflow: hidden;
     min-height: 200px;
-    .logo-product {
-      margin-top: 15px;
+
+
+    &__uc-img {
+      img {
+        width: 100%;
+      }
     }
+
+    &__logo {
+      margin-top: 50px;
+    }
+
   }
-  .product_info {
-    .sku {
+
+  .product-info {
+
+    &__sku {
       font-weight: bold;
+      margin-bottom: 20px;
     }
+
+    &__sell-price {
+      padding: 15px 20px;
+      background: $hover-color;
+      display: inline-block;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    &__description {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+
+      &--set {
+        float: left;
+      }
+
+    }
+
     .add-to-cart {
       .form-type-uc-quantity {
         width: 200px;
@@ -78,6 +116,7 @@
       }
     }
   }
+
   .message-registered {
     padding: 15px;
     .fa-user {
@@ -85,12 +124,7 @@
       display: inline-block;
     }
   }
-  .sell-price {
-    padding: 2px 5px;
-    background: $hover-color;
-    display: inline-block;
-    margin: 10px 0;
-  }
+
 }
 
 
